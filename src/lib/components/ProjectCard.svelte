@@ -13,4 +13,5 @@
             <p>{tag}</p>
         {/each}
     </div>
+    <a href={`/projects/${project.name.toLowerCase()}`}>Learn More</a>
 </div>
