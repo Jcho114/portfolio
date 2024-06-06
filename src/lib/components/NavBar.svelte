@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 
-	function handleAnchorClick(
+	async function handleAnchorClick(
 		event: MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement }
 	) {
 		if ($page.route.id !== '/') {
@@ -17,6 +18,7 @@
 
 		if (id) {
 			const target = document.getElementById(id);
+			await goto(`/#${id}`, {replaceState: true, noScroll: true, keepFocus: true});
 			if (target) {
 				target.scrollIntoView({
 					behavior: 'smooth'
