@@ -1,7 +1,5 @@
 name: Run Unit Tests and Lint File
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main, dev]
 jobs:
