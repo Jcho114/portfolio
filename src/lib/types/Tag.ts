@@ -1,3 +1,5 @@
+import stringToColor from '../util/stringToColor';
+
 enum Tag {
 	JavaScript = 'JavaScript',
 	TypeScript = 'TypeScript',
@@ -13,5 +15,9 @@ enum Tag {
 	JUnit = 'JUnit',
 	Pytest = 'Pytest'
 }
+
+export const tagColorMapping: Record<string, string> = Object.values(Tag).reduce((acc, el) => {
+	return { ...acc, [el]: stringToColor(el) };
+}, {});
 
 export default Tag;
