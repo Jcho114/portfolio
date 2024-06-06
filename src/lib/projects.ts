@@ -8,8 +8,6 @@ const portfolio: Project = {
 	tags: [Tag.TypeScript, Tag.Svelte, Tag.Vitest]
 };
 
-const projects = [
-	portfolio
-];
+const projects = [portfolio];
 
 export default projects;

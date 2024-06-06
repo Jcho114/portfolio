@@ -18,7 +18,7 @@
 
 		if (id) {
 			const target = document.getElementById(id);
-			await goto(`/#${id}`, {replaceState: true, noScroll: true, keepFocus: true});
+			await goto(`/#${id}`, { replaceState: true, noScroll: true, keepFocus: true });
 			if (target) {
 				target.scrollIntoView({
 					behavior: 'smooth'
