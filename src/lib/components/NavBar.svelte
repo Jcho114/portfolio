@@ -28,7 +28,7 @@
 	}
 </script>
 
-<nav class="flex flex-row gap-4 justify-center py-4 bg-transparent">
+<nav class="flex flex-row gap-4 justify-center items-center h-navbar bg-transparent">
 	<a href="/">Home</a>
 	<a href="/#projects" on:click={handleAnchorClick}>Projects</a>
 </nav>
