@@ -28,7 +28,8 @@
 	}
 </script>
 
-<nav class="flex flex-row gap-4 justify-center items-center h-navbar w-screen overflow-hidden bg-transparent">
+<nav class="flex flex-row gap-4 justify-center items-center h-navbar w-screen max-w-full overflow-hidden bg-transparent">
 	<a href="/">Home</a>
 	<a href="/#projects" on:click={handleAnchorClick}>Projects</a>
+	<a href="/" target="_blank">Resume</a>
 </nav>
