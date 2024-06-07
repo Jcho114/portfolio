@@ -9,6 +9,6 @@ const portfolio: Project = {
 	tags: [Tag.TypeScript, Tag.Svelte, Tag.Vitest]
 };
 
-const projects = [portfolio];
+const projects = [portfolio, { ...portfolio, name: 'Portfolio2' }];
 
 export default projects;

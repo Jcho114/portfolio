@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-row gap-10 justify-center items-center">
-	<img class="w-1/3 aspect-[16/12] object-cover" src={project.thumbnail} alt={project.name}/>
+	<img class="w-1/3 aspect-[16/10] object-cover" src={project.thumbnail} alt={project.name}/>
 	<div class="flex flex-col gap-2">
 		<div>
 			<p class="text-3xl font-medium">{project.name}</p>
