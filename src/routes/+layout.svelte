@@ -20,7 +20,7 @@
 	on:mousemove={onmousemove}
 	on:scroll={onscroll}
 	class="text-white"
-	style={`background: radial-gradient(circle at ${x + xScroll}px ${y + yScroll}px, rgba(19,57,92,1) 0%, rgba(10,34,55,1) 100%);`}
+	style={`background: radial-gradient(circle at ${x + xScroll}px ${y + yScroll}px, rgba(11,34,56,1) 0%, rgba(2,16,28,1) 100%);`}
 >
 	<NavBar />
 	<slot />
