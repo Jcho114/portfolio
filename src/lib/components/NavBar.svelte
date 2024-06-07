@@ -34,5 +34,9 @@
 >
 	<a href="/" class="text-lg">Home</a>
 	<a href="/#projects" class="text-lg" on:click={handleAnchorClick}>Projects</a>
-	<a href="/" class="text-lg" target="_blank">Resume</a>
+	<a
+		href="https://drive.google.com/file/d/17tLARQwKu_sqxl1MU1M2U4Seg9UjAqIp/view?usp=sharing"
+		class="text-lg"
+		target="_blank">Resume</a
+	>
 </nav>

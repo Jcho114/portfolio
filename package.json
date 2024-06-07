@@ -15,6 +15,7 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^4.0.2",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
@@ -37,5 +38,8 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-heros": "^6.0.3"
+	}
 }
