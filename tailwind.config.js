@@ -4,8 +4,11 @@ export default {
 	theme: {
 		extend: {
 			height: {
-				navbar: '4rem',
-				'full-with-navbar': 'calc(100vh - 4rem)'
+				navbar: '4.5rem',
+				'full-with-navbar': 'calc(100vh - 4.5rem)'
+			},
+			minHeight: {
+				'full-with-navbar': 'calc(100vh - 4.5rem)'
 			}
 		}
 	},

@@ -14,16 +14,14 @@
 	<div class="flex gap-3 my-2">
 		{#each project.tags as tag (tag)}
 			<p
-				class="text-md border border-black rounded-full px-3 py-1"
-				style={`background-color: ${tagColorMapping[tag]}75`}
+				class="text-md border rounded-full px-3 py-1"
+				style={`background-color: ${tagColorMapping[tag]}40; border-color: ${tagColorMapping[tag]}; color: ${tagColorMapping[tag]}`}
 			>
 				{tag}
 			</p>
 		{/each}
 	</div>
-	<button
-		class="text-md border border-black rounded-full w-fit px-3 py-1 hover:bg-gray-100 duration-200 ease-in"
-	>
+	<button class="text-md border border-white rounded-full w-fit px-3 py-1 duration-200 ease-in">
 		<a href={`/projects/${project.name.toLowerCase()}`}>Learn More</a>
 	</button>
 </div>
