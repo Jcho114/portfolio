@@ -22,7 +22,7 @@
 			if (target) {
 				target.scrollIntoView({
 					behavior: 'smooth',
-					block: 'start',
+					block: 'start'
 				});
 			}
 		}

@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-row gap-10 justify-center items-center">
-	<img class="w-1/4 aspect-[16/10] object-cover" src={project.thumbnail} alt={project.name}/>
+	<img class="w-1/4 aspect-[16/10] object-cover" src={project.thumbnail} alt={project.name} />
 	<div class="flex flex-col gap-2">
 		<div>
 			<p class="text-3xl font-medium">{project.name}</p>
@@ -26,5 +26,5 @@
 		<button class="text-sm border border-white rounded-full w-fit px-3 py-1 duration-200 ease-in">
 			<a href={`/projects/${project.name.toLowerCase()}`}>Learn More</a>
 		</button>
-	</div>	
+	</div>
 </div>
