@@ -1,10 +1,9 @@
 import Tag from './Tag';
 
-interface Project {
+export interface Project {
 	name: string;
 	description: string;
+	thumbnail: string;
 	role: string;
 	tags: Tag[];
 }
-
-export default Project;
