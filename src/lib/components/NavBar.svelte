@@ -21,7 +21,8 @@
 			await goto(`/#${id}`, { replaceState: true, noScroll: true, keepFocus: true });
 			if (target) {
 				target.scrollIntoView({
-					behavior: 'smooth'
+					behavior: 'smooth',
+					block: 'start',
 				});
 			}
 		}
