@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import NavBar from '$lib/components/NavBar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	let xScroll = 0,
 		yScroll = 0;
@@ -23,4 +24,5 @@
 >
 	<NavBar />
 	<slot />
+	<Footer />
 </main>
