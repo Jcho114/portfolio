@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type Project from '$lib/types/Project';
+	import type { Project } from '$lib/types/Project';
 	import { tagColorMapping } from '$lib/types/Tag';
 
 	export let project: Project;
