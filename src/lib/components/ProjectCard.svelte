@@ -5,8 +5,12 @@
 	export let project: Project;
 </script>
 
-<div class="flex flex-row gap-10 justify-center items-center">
-	<img class="w-1/4 aspect-[16/10] object-cover" src={project.thumbnail} alt={project.name} />
+<div class="flex flex-row gap-10 justify-center items-center max-md:flex-col max-md:p-10">
+	<img
+		class="w-1/4 aspect-[16/10] object-cover max-md:w-full"
+		src={project.thumbnail}
+		alt={project.name}
+	/>
 	<div class="flex flex-col gap-2">
 		<div>
 			<p class="text-3xl font-medium">{project.name}</p>
