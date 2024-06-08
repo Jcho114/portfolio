@@ -5,9 +5,9 @@
 
 	let xScroll = 0,
 		yScroll = 0;
-
 	let x = 0,
 		y = 0;
+
 	const onmousemove = (event: MouseEvent) => {
 		x = event.screenX;
 		y = event.screenY;
