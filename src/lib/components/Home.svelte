@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex justify-center items-center h-full-with-navbar gap-x-[10vw]">
-	<div class="flex flex-col justify-center gap-0.5">
+	<div class="flex flex-col justify-center gap-0.5 max-md:scale-75">
 		<p class="text-8xl font-semibold">Joseph Cho</p>
 		<div class="h-5" />
 		<p class="text-xl text-gray-300">Full Stack Developer</p>
@@ -21,7 +21,7 @@
 	</div>
 	<div
 		use:tilt={{ scale: 1.15, reverse: false }}
-		class="rounded w-[22.5%] aspect-[3/4] bg-white text-black flex flex-col justify-center items-center gap-3"
+		class="rounded w-[22.5%] aspect-[3/4] bg-white text-black flex flex-col justify-center items-center gap-3 max-md:hidden"
 	>
 		<p class="font-semibold text-lg">Class of 2025</p>
 		<p></p>
