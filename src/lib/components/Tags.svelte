@@ -4,10 +4,10 @@
 	export let tags: Tag[];
 </script>
 
-<div class="flex gap-3 my-2">
+<div class="flex gap-3 my-2 flex-wrap">
 	{#each tags as tag (tag)}
 		<p
-			class="text-sm border rounded-full px-3 py-1"
+			class="text-sm border rounded-full px-3 py-1 w-fit h-fit"
 			style={`background-color: ${tagColorMapping[tag]}25; border-color: ${tagColorMapping[tag]}; color: ${tagColorMapping[tag]}`}
 		>
 			{tag}

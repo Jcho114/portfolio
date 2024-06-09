@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { Project } from '$lib/types/Project';
-	import { tagColorMapping } from '$lib/types/Tag';
 	import Tags from './Tags.svelte';
 
 	export let project: Project;

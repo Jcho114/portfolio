@@ -3,12 +3,13 @@ import Tag from './types/Tag';
 
 export const portfolio: Project = {
 	name: 'Portfolio',
-	description: 'Created a personal Website that showcases my past projects and experiences.',
+	description: 'Created a personal website that showcases my past projects and experiences.',
 	thumbnail: 'https://cagents.com/wp-content/uploads/2020/12/dreamstime_xxl_177798453.jpg',
 	role: 'Web Developer',
 	tags: [Tag.TypeScript, Tag.Svelte, Tag.Vitest],
 	start: 'June 2024',
 	end: 'June 2024',
+	links: [],
 	path: 'portfolio'
 };
 
@@ -21,6 +22,7 @@ export const verisign: Project = {
 	tags: [Tag.Java, Tag.Spring, Tag.JUnit, Tag.JavaScript, Tag.React, Tag.Jest],
 	start: 'May 2024',
 	end: 'Present',
+	links: [],
 	path: 'verisign'
 };
 
@@ -33,6 +35,7 @@ export const appdevclub: Project = {
 	tags: [Tag.TypeScript, Tag.Express, Tag.React, Tag.Jest, Tag.Vitest, Tag.MongoDB],
 	start: 'March 2024',
 	end: 'Present',
+	links: [],
 	path: 'appdevclub'
 };
 
@@ -45,6 +48,7 @@ export const gdit: Project = {
 	tags: [Tag.Python, Tag.FastAPI, Tag.Pytest, Tag.MongoDB],
 	start: 'January 2024',
 	end: 'May 2024',
+	links: [],
 	path: 'gdit'
 };
 
@@ -58,6 +62,7 @@ export const peersphere: Project = {
 	tags: [Tag.TypeScript, Tag.React, Tag.Express, Tag.PostgreSQL],
 	start: 'April 2024',
 	end: 'April 2024',
+	links: [],
 	path: 'peersphere'
 };
 
@@ -71,6 +76,7 @@ export const vigilant: Project = {
 	tags: [Tag.TypeScript, Tag.React, Tag.Express, Tag.Jest, Tag.MongoDB],
 	start: 'January 2024',
 	end: 'January 2024',
+	links: [],
 	path: 'vigilant'
 };
 
@@ -83,9 +89,14 @@ export const csnades: Project = {
 	tags: [Tag.TypeScript, Tag.React, Tag.MongoDB],
 	start: 'December 2023',
 	end: 'January 2024',
+	links: [],
 	path: 'csnades'
 };
 
 const projects = [portfolio, verisign, appdevclub, gdit, vigilant, peersphere, csnades];
+
+export const projectMapping = projects.reduce((acc, el) => {
+	return { ...acc, [el.path]: el };
+}, {});
 
 export default projects;
