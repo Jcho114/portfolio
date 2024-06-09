@@ -18,8 +18,10 @@
 				target="_blank"
 				class="hover:text-4xl ease-in duration-150"><Icon icon="mdi:linkedin" /></a
 			>
-			<a data-testid="email" href="mailto:joseph.cho20@gmail.com" class="hover:text-4xl ease-in duration-150"
-				><Icon icon="mdi:email" /></a
+			<a
+				data-testid="email"
+				href="mailto:joseph.cho20@gmail.com"
+				class="hover:text-4xl ease-in duration-150"><Icon icon="mdi:email" /></a
 			>
 		</div>
 	</main>
