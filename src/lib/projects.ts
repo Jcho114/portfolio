@@ -101,7 +101,7 @@ export const csnades: Project = {
 	path: 'csnades'
 };
 
-const projects = [verisign, portfolio, appdevclub, gdit, vigilant, peersphere, csnades];
+const projects = [verisign, portfolio, appdevclub, gdit, peersphere, vigilant, csnades];
 
 export const projectMapping = projects.reduce((acc, el) => {
 	return { ...acc, [el.path]: el };

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/util/cn';
+	import { cn } from '$lib/components/external/ThreeDCardEffect/cn';
 
 	export let className: string;
 </script>

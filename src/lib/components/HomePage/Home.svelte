@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import tilt from '../../util/tilt';
 	import handleAnchorClick from '$lib/util/handleAnchorClick';
 	import convertCodeToHtml from '$lib/util/convertCodeToHtml';
 	import code from '../assets/intro.txt?raw';
-	import CardContainer from '../ui/ThreeDCardEffect/CardContainer.svelte';
-	import CardBody from '../ui/ThreeDCardEffect/CardBody.svelte';
-	import CardItem from '../ui/ThreeDCardEffect/CardItem.svelte';
+	import CardContainer from '../external/ThreeDCardEffect/CardContainer.svelte';
+	import CardBody from '../external/ThreeDCardEffect/CardBody.svelte';
+	import CardItem from '../external/ThreeDCardEffect/CardItem.svelte';
+	import AnimatedElement from '../animations/AnimatedElement.svelte';
 	let isMouseEntered = false;
 </script>
 
