@@ -1,0 +1,164 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_ProjectLayout.js": {
+    "file": "chunks/ProjectLayout.js",
+    "name": "ProjectLayout",
+    "imports": [
+      "_ssr.js",
+      "_projects.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_projects.js": {
+    "file": "chunks/projects.js",
+    "name": "projects",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
+  "_stores.js": {
+    "file": "chunks/stores.js",
+    "name": "stores",
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_ssr.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "entries/pages/_error.svelte.js",
+    "name": "entries/pages/_error.svelte",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "name": "entries/pages/_layout.svelte",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.C11N_sNR.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_stores.js",
+      "_projects.js"
+    ]
+  },
+  "src/routes/projects/appdevclub/+page.svx": {
+    "file": "entries/pages/projects/appdevclub/_page.svx.js",
+    "name": "entries/pages/projects/appdevclub/_page.svx",
+    "src": "src/routes/projects/appdevclub/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/csnades/+page.svx": {
+    "file": "entries/pages/projects/csnades/_page.svx.js",
+    "name": "entries/pages/projects/csnades/_page.svx",
+    "src": "src/routes/projects/csnades/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/gdit/+page.svx": {
+    "file": "entries/pages/projects/gdit/_page.svx.js",
+    "name": "entries/pages/projects/gdit/_page.svx",
+    "src": "src/routes/projects/gdit/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/peersphere/+page.svx": {
+    "file": "entries/pages/projects/peersphere/_page.svx.js",
+    "name": "entries/pages/projects/peersphere/_page.svx",
+    "src": "src/routes/projects/peersphere/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/portfolio/+page.svx": {
+    "file": "entries/pages/projects/portfolio/_page.svx.js",
+    "name": "entries/pages/projects/portfolio/_page.svx",
+    "src": "src/routes/projects/portfolio/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/verisign/+page.svx": {
+    "file": "entries/pages/projects/verisign/_page.svx.js",
+    "name": "entries/pages/projects/verisign/_page.svx",
+    "src": "src/routes/projects/verisign/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  },
+  "src/routes/projects/vigilant/+page.svx": {
+    "file": "entries/pages/projects/vigilant/_page.svx.js",
+    "name": "entries/pages/projects/vigilant/_page.svx",
+    "src": "src/routes/projects/vigilant/+page.svx",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_ProjectLayout.js"
+    ]
+  }
+}
