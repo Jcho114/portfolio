@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import tilt from '../util/tilt';
+	import tilt from '../../util/tilt';
 	import handleAnchorClick from '$lib/util/handleAnchorClick';
 </script>
 
@@ -21,6 +21,7 @@
 	</div>
 	<div
 		use:tilt={{ scale: 1.15, reverse: false }}
+		data-testid="card"
 		class="rounded w-[22.5%] aspect-[3/4] bg-white text-black flex flex-col justify-center items-center gap-3 max-md:hidden"
 	>
 		<p class="font-semibold text-lg">Class of 2025</p>

@@ -6,4 +6,7 @@ export interface Project {
 	thumbnail: string;
 	role: string;
 	tags: Tag[];
+	start: string;
+	end: string;
+	path: string;
 }
