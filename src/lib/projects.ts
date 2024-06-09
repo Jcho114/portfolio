@@ -22,7 +22,10 @@ export const portfolio: Project = {
 	tags: [Tag.TypeScript, Tag.Svelte, Tag.Vitest, Tag.GitHub_Actions],
 	start: 'June 2024',
 	end: 'June 2024',
-	links: [],
+	links: [
+		{ url: 'https://josephcho.dev/', label: 'Website Link' },
+		{ url: 'https://github.com/Jcho114/portfolio', label: 'Github Repo' }
+	],
 	path: 'portfolio'
 };
 
@@ -101,7 +104,45 @@ export const csnades: Project = {
 	path: 'csnades'
 };
 
-const projects = [verisign, portfolio, appdevclub, gdit, peersphere, vigilant, csnades];
+export const josepharchitects: Project = {
+	name: 'Joseph Architects Website',
+	description:
+		'Developed and deployed a responsive architecture company that showcases nearly 20 projects and goals.',
+	thumbnail:
+		'https://static.wixstatic.com/media/fcc81e_4ae32252304643e680f90b3de051acf4~mv2.jpg/v1/fit/w_2500,h_1330,al_c/fcc81e_4ae32252304643e680f90b3de051acf4~mv2.jpg',
+	role: 'Freelancer',
+	tags: [Tag.JavaScript, Tag.React, Tag.MySQL],
+	start: 'May 2023',
+	end: 'June 2023',
+	links: [{ url: 'https://joseph-architects.org/', label: 'Website Link' }],
+	path: 'josepharchitects'
+};
+
+export const bitcamp2023: Project = {
+	name: 'Bitcamp 2023 - AI Real Estate Price Predictor',
+	description:
+		'Developed a full-stack web application with a team of four in 36 hours that predicts future median real estate prices in over 6000 zip codes across California through a map visualizer.',
+	thumbnail:
+		'https://assets.everspringpartners.com/fe/06/f23661be455e97d009c6ae418995/real-estate-finance.jpg',
+	role: 'Frontend Developer',
+	tags: [Tag.JavaScript, Tag.React],
+	start: 'April 2023',
+	end: 'April 2023',
+	links: [],
+	path: 'bitcamp2023'
+};
+
+const projects = [
+	verisign,
+	portfolio,
+	appdevclub,
+	gdit,
+	peersphere,
+	vigilant,
+	csnades,
+	josepharchitects,
+	bitcamp2023
+];
 
 export const projectMapping = projects.reduce((acc, el) => {
 	return { ...acc, [el.path]: el };

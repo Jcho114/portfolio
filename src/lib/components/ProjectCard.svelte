@@ -12,7 +12,7 @@
 <div class="flex flex-row gap-10 justify-center w-full items-center max-md:flex-col max-md:p-14">
 	<CardContainer bind:isMouseEntered>
 		<CardBody className="w-fit">
-			<CardItem>
+			<CardItem {isMouseEntered}>
 				<a href={`/projects/${project.path}`}>
 					<img
 						class="object-cover max-md:w-full w-[30vw] aspect-[16/10]"
