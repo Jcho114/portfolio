@@ -2,7 +2,20 @@
 	import { page } from '$app/stores';
 	import tilt from '../../util/tilt';
 	import handleAnchorClick from '$lib/util/handleAnchorClick';
+	import convertCodeToHtml from '$lib/util/convertCodeToHtml';
+	import code from '../assets/intro.txt?raw';
+	import CardContainer from '../ui/ThreeDCardEffect/CardContainer.svelte';
+	import CardBody from '../ui/ThreeDCardEffect/CardBody.svelte';
+	import CardItem from '../ui/ThreeDCardEffect/CardItem.svelte';
+	let isMouseEntered = false;
 </script>
+
+<svelte:head>
+	<link
+		href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-gruvbox-dark.min.css"
+		rel="stylesheet"
+	/>
+</svelte:head>
 
 <div class="flex justify-center items-center h-full-with-navbar gap-x-[10vw]">
 	<div class="flex flex-col justify-center gap-0.5 max-md:scale-75">
@@ -19,12 +32,11 @@
 			<p class="border w-fit px-4 py-1 rounded-full text-lg text-gray-300 hover">Scroll ↓</p>
 		</a>
 	</div>
-	<div
-		use:tilt={{ scale: 1.15, reverse: false }}
-		data-testid="card"
-		class="rounded w-[22.5%] aspect-[3/4] bg-white text-black flex flex-col justify-center items-center gap-3 max-md:hidden"
-	>
-		<p class="font-semibold text-lg">Class of 2025</p>
-		<p></p>
-	</div>
+	<CardContainer bind:isMouseEntered>
+		<CardBody className="rounded w-fit h-fit max-md:hidden bg-[#1D2021] px-10 py-12">
+			<CardItem {isMouseEntered} translateZ={25}>
+				<pre><code class="w-[inherit]">{@html convertCodeToHtml(code, 'javascript')}</code></pre>
+			</CardItem>
+		</CardBody>
+	</CardContainer>
 </div>

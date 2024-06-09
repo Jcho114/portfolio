@@ -1,4 +1,5 @@
 import Tag from './Tag';
+import type { Link } from './Link';
 
 export interface Project {
 	name: string;
@@ -8,6 +9,6 @@ export interface Project {
 	tags: Tag[];
 	start: string;
 	end: string;
-	links: string[];
+	links: Link[];
 	path: string;
 }

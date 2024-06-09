@@ -1,16 +1,27 @@
 <script lang="ts">
 	import type { Project } from '$lib/types/Project';
 	import Tags from './Tags.svelte';
-
+	import CardContainer from './ui/ThreeDCardEffect/CardContainer.svelte';
+	import CardBody from './ui/ThreeDCardEffect/CardBody.svelte';
+	import CardItem from './ui/ThreeDCardEffect/CardItem.svelte';
 	export let project: Project;
+	let isMouseEntered = false;
 </script>
 
 <div class="flex flex-row gap-10 justify-center items-center max-md:flex-col max-md:p-14">
-	<img
-		class="w-1/4 aspect-[16/10] object-cover max-md:w-fit"
-		src={project.thumbnail}
-		alt={project.name}
-	/>
+	<CardContainer bind:isMouseEntered>
+		<CardBody className="w-fit">
+			<CardItem>
+				<a href={`/projects/${project.path}`}>
+					<img
+						class="object-cover max-md:w-full w-[30vw] aspect-[16/10]"
+						src={project.thumbnail}
+						alt={project.name}
+					/>
+				</a>
+			</CardItem>
+		</CardBody>
+	</CardContainer>
 	<div class="flex flex-col gap-2 w-1/3 max-md:w-full">
 		<div>
 			<p class="text-3xl font-medium">{project.name}</p>

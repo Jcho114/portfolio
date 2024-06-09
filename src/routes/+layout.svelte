@@ -14,6 +14,22 @@
 	};
 </script>
 
+<svelte:head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			font-family: Montserrat;
+		}
+	</style>
+</svelte:head>
+
 <svelte:window bind:scrollX={xScroll} bind:scrollY={yScroll} />
 
 <main
