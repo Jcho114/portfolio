@@ -2,5 +2,12 @@
 layout: project
 ---
 
+<script>
+  import { portfolio } from '$lib/projects';
+  import Tags from '$lib/components/Tags.svelte';
+</script>
+
 # Portfolio Website
 ## Website to showcase my projects
+
+<Tags tags={portfolio.tags} />

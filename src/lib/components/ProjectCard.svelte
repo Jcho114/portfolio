@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Project } from '$lib/types/Project';
 	import { tagColorMapping } from '$lib/types/Tag';
+	import Tags from './Tags.svelte';
 
 	export let project: Project;
 </script>
@@ -18,16 +19,7 @@
 			<p class="text-sm">{project.start} - {project.end}</p>
 		</div>
 		<p class="text-md text-gray-300">{project.description}</p>
-		<div class="flex gap-3 my-2">
-			{#each project.tags as tag (tag)}
-				<p
-					class="text-sm border rounded-full px-3 py-1"
-					style={`background-color: ${tagColorMapping[tag]}25; border-color: ${tagColorMapping[tag]}; color: ${tagColorMapping[tag]}`}
-				>
-					{tag}
-				</p>
-			{/each}
-		</div>
+		<Tags tags={project.tags} />
 		<button class="text-sm border border-white rounded-full w-fit px-3 py-1 duration-200 ease-in">
 			<a href={`/projects/${project.path}`}>Learn More</a>
 		</button>
