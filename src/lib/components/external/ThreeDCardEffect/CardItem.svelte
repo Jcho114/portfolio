@@ -12,9 +12,9 @@
 
 	let ref: HTMLDivElement;
 
-	$: isMouseEntered, handleAnimations();
+	$: handleAnimations(isMouseEntered);
 
-	const handleAnimations = () => {
+	const handleAnimations = (isMouseEntered: boolean) => {
 		if (!ref) return;
 		if (isMouseEntered) {
 			ref.style.transform = `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
