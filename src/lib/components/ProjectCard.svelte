@@ -23,7 +23,7 @@
 			</CardItem>
 		</CardBody>
 	</CardContainer>
-	<div class="flex flex-col gap-2 w-1/3 max-md:w-full">
+	<div class="flex flex-col gap-2 w-1/3 max-md:w-full text-wrap">
 		<div>
 			<p class="text-3xl font-medium">{project.name}</p>
 			<p class="text-sm">{project.role}</p>
