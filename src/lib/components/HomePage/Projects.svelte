@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import projects from '$lib/projects';
+	import AnimatedElement from '$lib/components/animations/AnimatedElement.svelte';
 </script>
 
 <div
@@ -10,7 +11,9 @@
 	<h1 class="text-5xl font-semibold mb-4">Projects</h1>
 	<div class="flex flex-col justify-center gap-y-16">
 		{#each projects as project (project.name)}
-			<ProjectCard {project} />
+			<AnimatedElement>
+				<ProjectCard {project} />
+			</AnimatedElement>
 		{/each}
 	</div>
 </div>

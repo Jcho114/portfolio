@@ -6,7 +6,6 @@
 	import CardContainer from '../external/ThreeDCardEffect/CardContainer.svelte';
 	import CardBody from '../external/ThreeDCardEffect/CardBody.svelte';
 	import CardItem from '../external/ThreeDCardEffect/CardItem.svelte';
-	import AnimatedElement from '../animations/AnimatedElement.svelte';
 	let isMouseEntered = false;
 </script>
 
@@ -32,11 +31,13 @@
 			<p class="border w-fit px-4 py-1 rounded-full text-lg text-gray-300 hover">Scroll ↓</p>
 		</a>
 	</div>
-	<CardContainer bind:isMouseEntered>
-		<CardBody className="rounded w-fit h-fit max-md:hidden bg-[#1D2021] px-10 py-12">
-			<CardItem {isMouseEntered} translateZ={25}>
-				<pre><code class="w-[inherit]">{@html convertCodeToHtml(code, 'javascript')}</code></pre>
-			</CardItem>
-		</CardBody>
-	</CardContainer>
+	<div data-testid="card">
+		<CardContainer bind:isMouseEntered>
+			<CardBody className="rounded w-fit h-fit max-md:hidden bg-[#1D2021] px-10 py-12">
+				<CardItem {isMouseEntered} translateZ={25}>
+					<pre><code class="w-[inherit]">{@html convertCodeToHtml(code, 'javascript')}</code></pre>
+				</CardItem>
+			</CardBody>
+		</CardContainer>
+	</div>
 </div>

@@ -12,7 +12,9 @@
 		>
 	</div>
 	<div class="flex flex-row gap-4 items-center">
-		<a href="/" class="text-lg origin-center hover:text-xl ease-in duration-150 font-semibold"
+		<a
+			href="/"
+			class="text-lg origin-center hover:text-xl ease-in duration-150 font-semibold max-sm:hidden"
 			>Home</a
 		>
 		<a

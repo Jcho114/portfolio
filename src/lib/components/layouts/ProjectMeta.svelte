@@ -6,7 +6,7 @@
 </script>
 
 <div class="gap-4 flex flex-col">
-	<h1 class="text-6xl font-bold mb-4">{project.name}</h1>
+	<h1 class="text-6xl font-bold mb-4 max-sm:text-4xl">{project.name}</h1>
 	<img class="w-full aspect-video object-cover" src={project.thumbnail} alt={project.name} />
 	<div class="flex gap-[5%] max-md:flex-col w-full">
 		<div class="flex flex-col w-[47.5%] max-md:w-full gap-3">
