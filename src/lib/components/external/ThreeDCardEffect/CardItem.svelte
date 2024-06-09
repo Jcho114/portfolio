@@ -8,7 +8,7 @@
 	export let rotateX: number | string | undefined = 0;
 	export let rotateY: number | string | undefined = 0;
 	export let rotateZ: number | string | undefined = 0;
-	export let isMouseEntered: boolean = false;
+	export let isMouseEntered: boolean;
 
 	let ref: HTMLDivElement;
 

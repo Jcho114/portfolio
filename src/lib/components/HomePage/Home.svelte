@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import handleAnchorClick from '$lib/util/handleAnchorClick';
-	import convertCodeToHtml from '$lib/util/convertCodeToHtml';
-	import code from '../assets/intro.txt?raw';
 	import CardContainer from '../external/ThreeDCardEffect/CardContainer.svelte';
 	import CardBody from '../external/ThreeDCardEffect/CardBody.svelte';
 	import CardItem from '../external/ThreeDCardEffect/CardItem.svelte';
+	import Code from './Code.svx';
 	let isMouseEntered = false;
 </script>
 
@@ -35,7 +34,7 @@
 		<CardContainer bind:isMouseEntered>
 			<CardBody className="rounded w-fit h-fit max-md:hidden bg-[#1D2021] px-10 py-12">
 				<CardItem {isMouseEntered} translateZ={25}>
-					<pre><code class="w-[inherit]">{@html convertCodeToHtml(code, 'javascript')}</code></pre>
+					<Code />
 				</CardItem>
 			</CardBody>
 		</CardContainer>

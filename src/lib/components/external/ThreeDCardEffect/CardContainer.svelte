@@ -15,12 +15,12 @@
 		containerRef.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
 	};
 
-	const handleMouseEnter = (e: MouseEvent) => {
+	const handleMouseEnter = (_e: MouseEvent) => {
 		isMouseEntered = true;
 		if (!containerRef) return;
 	};
 
-	const handleMouseLeave = (e: MouseEvent) => {
+	const handleMouseLeave = (_e: MouseEvent) => {
 		if (!containerRef) return;
 		isMouseEntered = false;
 		containerRef.style.transform = `rotateY(0deg) rotateX(0deg)`;
@@ -32,6 +32,7 @@
 	style="perspective: 1000px;"
 >
 	<div
+		role="figure"
 		bind:this={containerRef}
 		on:mouseenter={handleMouseEnter}
 		on:mousemove={handleMouseMove}

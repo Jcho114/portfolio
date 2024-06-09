@@ -6,7 +6,6 @@
 </script>
 
 <div
-	class="wrapper"
 	use:inview={{ unobserveOnEnter: true, rootMargin: '0%' }}
 	on:change={({ detail }) => {
 		isInView = detail.inView;
@@ -18,16 +17,3 @@
 		</div>
 	{/if}
 </div>
-
-<style>
-	.wrapper {
-		margin-top: 30px;
-	}
-
-	.box {
-		width: 300px;
-		border: 1px solid rgb(221, 221, 221);
-		padding: 25px;
-		border-radius: 10px;
-	}
-</style>
