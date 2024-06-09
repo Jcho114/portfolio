@@ -91,7 +91,7 @@ export const vigilant: Project = {
 export const csnades: Project = {
 	name: 'CS2 Nades',
 	description:
-		'Created an education full stack web application that stores and displays over 100 nade, flash, molotov, and smoke lineups for the video game Counter-Strike 2.',
+		'Created an educational full stack web application that stores and displays over 100 nade, flash, molotov, and smoke lineups for the video game Counter-Strike 2.',
 	thumbnail: 'https://github.com/Jcho114/cs2-nades/raw/main/app/public/README/README.png',
 	role: 'Web Developer',
 	tags: [Tag.TypeScript, Tag.React, Tag.MongoDB],
