@@ -1,0 +1,1 @@
+Putting all implementations of components found online via https://aceternity.sveltekit.io/components/3d-card-effect in this directory

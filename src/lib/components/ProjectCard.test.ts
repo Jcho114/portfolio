@@ -1,18 +1,7 @@
 import { render, screen } from '@testing-library/svelte';
 import { describe, test, expect, beforeEach } from 'vitest';
 import ProjectCard from './ProjectCard.svelte';
-import Tag from '../types/Tag';
-
-const project = {
-	name: 'Portfolio',
-	description: 'Personal Website that showcases my past projects and experiences.',
-	thumbnail: 'https://cagents.com/wp-content/uploads/2020/12/dreamstime_xxl_177798453.jpg',
-	role: 'Web Developer',
-	tags: [Tag.TypeScript, Tag.Svelte, Tag.Vitest],
-	start: 'June 2024',
-	end: 'June 2024',
-	path: 'portfolio'
-};
+import { project } from '$lib/mocks/mockProjects';
 
 describe('ProjectCard', () => {
 	beforeEach(() => {

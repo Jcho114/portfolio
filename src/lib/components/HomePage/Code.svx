@@ -1,0 +1,14 @@
+```typescript
+const Joseph = {
+  education: {
+      school: "University of Maryland",
+      standing: "Junior",
+      major: "Computer Science",
+      minor: "Statistics",
+  },
+  interests: [
+    Interest.SOFTWARE_ENGINEERING,
+    Interest.MACHINE_LEARNING,
+  ],
+};
+```

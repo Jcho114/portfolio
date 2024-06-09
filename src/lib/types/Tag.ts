@@ -16,7 +16,10 @@ enum Tag {
 	Pytest = 'Pytest',
 	MySQL = 'MySQL',
 	PostgreSQL = 'PostgreSQL',
-	MongoDB = 'MongoDB'
+	MongoDB = 'MongoDB',
+	Jenksins = 'Jenkins',
+	GitHub_Actions = 'Github Actions',
+	Drizzle = 'Drizzle'
 }
 
 export const tagColorMapping: Record<string, string> = {
@@ -36,7 +39,10 @@ export const tagColorMapping: Record<string, string> = {
 	FastAPI: '#059286',
 	Pytest: '#C1CC02',
 	MongoDB: '#4FAA41',
-	PostgreSQL: '#2F6792'
+	PostgreSQL: '#2F6792',
+	Jenkins: '#D43530',
+	Github_Actions: '#1F84F7',
+	Drizzle: '#C5F74F'
 };
 
 export default Tag;

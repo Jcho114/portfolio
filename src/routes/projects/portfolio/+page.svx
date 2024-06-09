@@ -1,6 +1,7 @@
 ---
 layout: project
+path: portfolio
 ---
 
-# Portfolio Website
-## Website to showcase my projects
+# Overview
+### TBD!
