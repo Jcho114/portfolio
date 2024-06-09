@@ -29,7 +29,7 @@
 			{/each}
 		</div>
 		<button class="text-sm border border-white rounded-full w-fit px-3 py-1 duration-200 ease-in">
-			<a href={`/projects/${project.name.toLowerCase()}`}>Learn More</a>
+			<a href={`/projects/${project.path}`}>Learn More</a>
 		</button>
 	</div>
 </div>

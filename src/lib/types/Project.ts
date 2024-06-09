@@ -8,4 +8,5 @@ export interface Project {
 	tags: Tag[];
 	start: string;
 	end: string;
+	path: string;
 }
