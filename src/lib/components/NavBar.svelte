@@ -23,7 +23,7 @@
 			on:click={(event) => handleAnchorClick(event, $page.route.id || '')}>Projects</a
 		>
 		<a
-			href="https://drive.google.com/file/d/1adYvfJYxqT4BqwGMD1fW-2f5tWtx1h51/view?usp=sharing"
+			href="https://drive.google.com/file/d/1Jj2sVj2ni-hfg89GBc3IfRKFvUo-dXn5/view?usp=sharing"
 			class="text-lg origin-center hover:text-xl ease-in duration-150 font-semibold"
 			target="_blank">Resume</a
 		>
